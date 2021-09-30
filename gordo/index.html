@@ -3,10 +3,11 @@
 
 <html lang="en">
     <head>
-        <title>First Assignment</title>
+        <title>HTML 5 Prototype</title>
         <meta charset="utf-8"> <!--So we don't get weird triangle question mark thingies (do they have a proper term?)-->
         <meta name="description" content="A synopsis of Gordo's flight to space." /> <!--The description you would see under the link on a search engine-->
         <meta name="author" content="Tyler Mahony" /> <!--so people know I made the web page-->
+        <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
     </head>
     <body>
         <div id="container">
@@ -16,6 +17,11 @@
               <!--#header-->
             <content id="content">
                 <img src="assets/img/gordo.jpeg" alt="Gordo"/> <!--So you don't change the photo of gordo for whatever reason-->
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Gordo Video">Gordo Video</a>
+                    </li>
+                </ul>
                 <h2>Old Reliable</h2>
                 <p>
                     Gordo was one of the first monkeys to make it into space as part of NASA's space program. 
@@ -23,6 +29,12 @@
                         Eight monkeys had flown on NASA missions before him, five of whom went by the name of Albert.
                     </em>
                 </p>
+                <h3>Animals in Space Timeline</h3>
+                <ol>
+                    <li>
+                        
+                    </li>
+                </ol>
                 <p>
                     Gordo's historic flight took place on December 13, 1958 when he took off from Cape Canaveral for a 15 minute flight into space. 
                     Even though he was weightless for over 8 minutes the on-board instruments indicated that Gordo enjoyed his journey into space. 
@@ -68,45 +80,68 @@
                     recorded his historic suborbital journey, considered one of the outstanding achievements of space research.
                 </p>
                 <table>
-                    <caption>Grocery List</caption>
+                    <caption>Animals in Space</caption>
                     <tr>
-                      <th scope="col">Item</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Store</th>
-                      <th scope="col">Cost($)</th>
-                      <th scope="col">Cost(£)</th>
+                      <th scope="col">Animal</th>
+                      <th scope="col">Year</th>
+                      <th scope="col">Rocket</th>
+                      <th scope="col">Total Height</th>
+                      <th scope="col">Outcome</th>
                     </tr>
                     <!-- scope associates the header with the column -->
                     <tr>
-                      <td>Jolt</td>
-                      <td>6</td>
-                      <td>Kroger</td>
-                      <td>.50</td>
-                      <td>1.50</td>
+                      <td>Fruit Flies</td>
+                      <td>1947</td>
+                      <td>V-2 Rocket</td>
+                      <td>109km</td>
+                      <td>Survived</td>
                     </tr>
                     <tr>
-                      <td>Ramen</td>
-                      <td>12</td>
-                      <td>Kroger</td>
-                      <td>.25</td>
-                      <td>1.25</td>
+                      <td>Rhesus Monkey</td>
+                      <td>1949</td>
+                      <td>V-2 Rocket</td>
+                      <td>134km</td>
+                      <td>Died on Impact</td>
                     </tr>
                     <tr>
-                      <td>Cheetos</td>
-                      <td>5</td>
-                      <td>Kroger</td>
-                      <td>1.00</td>
-                      <td>2.00</td>
+                      <td>Mouse</td>
+                      <td>1950</td>
+                      <td>V-2 Rocket</td>
+                      <td>137km</td>
+                      <td>Rocket Disintigrated</td>
                     </tr>
                     <tr>
-                      <td>Bread</td>
-                      <td>1</td>
-                      <td>Kroger</td>
-                      <td>2.19</td>
-                      <td>3.19</td>
+                      <td>Dog</td>
+                      <td>1957</td>
+                      <td>Sputnik 2</td>
+                      <td>Orbit (Unknown)</td>
+                      <td>Died in flight</td>
                     </tr>
                 </table>
-                <p><strike>I need to get groceries...</strike></p>
+                <dl>
+                    <dt>V-2 Rocket</dt>
+                    <dd>The V-2, with the technical name Aggregat 4, was the world's first long-range guided ballistic missile.</dd>
+                    <dt>Sputnik 2</dt>
+                    <dd>Sputnik 2, or Prosteyshiy Sputnik 2 was the second spacecraft launched into Earth orbit, on 3 November 1957, and the first to carry a living animal, a Soviet space dog named Laika. </dd>
+                </dl>
+                <h5>References</h5>
+            <ol>
+                <li>
+                    <a href="http://webstandardistas.com/04/gordo.txt" title="Sample Text">http://webstandardistas.com/04/gordo.txt</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Animals_in_space#1940s" title="Animals in Space Wikipedia">https://en.wikipedia.org/wiki/Animals_in_space#1940s</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Gordo_(monkey)" title="Gordo Wikipedia">https://en.wikipedia.org/wiki/Gordo_(monkey)</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/V-2_rocket" title="V-2 Rocket">https://en.wikipedia.org/wiki/V-2_rocket</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Sputnik_2" title="Sputnik 2">https://en.wikipedia.org/wiki/Sputnik_2</a>
+                </li>
+            </ol>
             </content>
             <!--#content-->
             <nav class="primary">
@@ -122,9 +157,6 @@
                     </li>
                     <li>
                         <a href="#header" title="Contact Information">Contact</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="Gordo Video">Gordo Video</a>
                     </li>
                 </ul>
             </nav>
