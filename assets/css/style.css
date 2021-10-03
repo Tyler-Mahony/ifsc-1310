@@ -9,3 +9,9 @@ a:link {
 a:visited {
     color : #a312ba; /*Lightish Purple*/
 }
+th {
+    text-align : center; /*Makes the table HEADER align to the center*/
+}
+table, th, td {
+    border : 1px solid white; /*The CSS way to make a table border, as opposed to the horrendous HTML way that is off limits*/
+}
