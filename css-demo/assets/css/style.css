@@ -12,6 +12,16 @@ html {
   box-sizing: inherit;
 }
 
+/* ---------------Utility Classes -------------- */
+
+.container {
+  width:70vw;
+  margin:50px auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* ---------------Global Styles----------------- */
 
 /*
@@ -22,9 +32,9 @@ html {
 #172D40 = Bluish Green
 */
 body {
-    background-color:#081526;
+    background-color:#A4A5A6;
     font-family: 'Noto Sans Display', sans-serif;
-    color: #A4A5A6;
+    color: #00060D;
 }
 
 /* Need to get a color pallete and font for next class */
@@ -83,7 +93,74 @@ header nav a:hover, header nav a:active{
   background-color:rgba(0, 6, 13, .8);
 }
 
+#intro h2 {
+  color: #081526;
+  border-bottom:3px dotted #172D40;
+  text-align: center;
+}
 
+#intro p {
+  line-height: 1.6em;
+}
+
+#intro {
+  border-bottom: 3px dotted #172D40;
+  padding-bottom: 18px;
+}
+#content {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+#content article.post {
+  width: 30%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+
+#content article.post:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  transition:.5s;
+}
+
+#content article.figure {
+  margin:0;
+}
+
+time.post-date {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.post a {
+  color:#122640;
+}
+
+.post a:hover, .post a:active {
+  text-decoration: none;
+}
+
+/* attribute selector example */
+aside[role="complementary"] {
+  background-color:#122640;
+  color: #A4A5A6;
+  padding: 0.4em;
+}
+
+aside div.container {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+article.widget {
+  width: 40%;
+}
+
+article.widget h2 {
+  text-align: center;
+}
 /* Media Query Example */
 
 @media screen and (max-width:1000px) {
