@@ -43,7 +43,7 @@ header.primary {
   
   /* Short Form (Top/Bottom, Right/Left)*/
   /*padding:20px 40px;*/
-  text-shadow: 2px 2px #00060D;
+  text-shadow: 1px 1px #00060D;
 }
 header.primary h1{
   font-size:2.8rem;
@@ -61,4 +61,41 @@ header.primary nav{
   width:50vw;
   margin:20px auto;
   max-width: 900px;
+}
+header.primary nav ul{
+  padding:0;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+header.primary nav li{
+  list-style-type: none;
+  text-shadow: none;
+}
+header.primary nav a{
+  background-color:rgba(0, 6, 13, .4);
+  color:#A4A5A6;
+  padding: 4px 10px;
+  border-radius:20px;
+  transition:.5s;
+}
+header nav a:hover, header nav a:active{
+  background-color:rgba(0, 6, 13, .8);
+}
+
+
+/* Media Query Example */
+
+@media screen and (max-width:1000px) {
+  header.primary nav ul {
+    flex-direction:column;
+    max-width: 70vw;
+    margin:auto;
+  }
+  header.primary nav li{
+    margin-bottom: 10px;
+  }
+  header.primary nav a{
+    display:block;
+  }
 }
