@@ -18,10 +18,35 @@ html {
   width:70vw;
   margin:50px auto;
 }
+
+
+.img-right {
+  float:right;
+  border:.5px solid #000000;
+  padding:5px;
+  margin-left:20px;
+}
+
+.img-left {
+  float:left;
+  border:.5px solid #000000;
+  padding:5px;
+  margin-right:20px;
+}
+
+.img-center {
+  display:block;
+  padding:1.5em;
+  margin:10px auto;
+}
+
+/* --------------Respnsive Images -------------- */
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 /* ---------------Global Styles----------------- */
 
 /*
@@ -31,6 +56,7 @@ img {
 #122640 = Darkish Blue
 #172D40 = Bluish Green
 */
+
 body {
     background-color:#A4A5A6;
     font-family: 'Noto Sans Display', sans-serif;
@@ -54,6 +80,8 @@ header.primary {
   /* Short Form (Top/Bottom, Right/Left)*/
   /*padding:20px 40px;*/
   text-shadow: 1px 1px #00060D;
+  
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230e80e1' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 header.primary h1{
   font-size:2.8rem;
@@ -111,6 +139,8 @@ header nav a:hover, header nav a:active{
   display: flex;
   flex-direction:row;
   justify-content:space-between;
+  border-bottom: 3px dotted #172D40;
+  padding-bottom: 3.2em;
 }
 
 #content article.post {
@@ -142,6 +172,15 @@ time.post-date {
 }
 
 /* attribute selector example */
+
+#additional-elements h2{
+  color:#00060D;
+}
+
+
+
+
+
 aside[role="complementary"] {
   background-color:#122640;
   color: #A4A5A6;
@@ -155,12 +194,41 @@ aside div.container {
 }
 
 article.widget {
-  width: 40%;
+  width: 45%;
+  background-color: #00060D;
+  padding: .8em;
 }
 
 article.widget h2 {
   text-align: center;
 }
+
+article.widget a {
+  display:block;
+  color: #A4A5A6;
+  margin-top: .8em;
+}
+
+aside a:hover, aside a:active {
+  text-decoration: none;
+}
+
+article.widget footer {
+  display: none;
+}
+
+#colophon {
+  background-color:#122640;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230e80e1' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+#colophon h6 {
+  padding:10px;
+  margin:0;
+  color:#A4A5A6;
+  text-align: center;
+}
+
+
 /* Media Query Example */
 
 @media screen and (max-width:1000px) {
