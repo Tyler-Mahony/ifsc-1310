@@ -1,17 +1,72 @@
+/* Main Site Stylesheet */
+
+/* -------------------Box Sizing------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* -------------------Utility Classes--------------- */
+
+.container {
+  width:70vw;
+  margin:50px auto;
+}
+
+
+.img-right {
+  float:right;
+  border:.5px solid #000000;
+  padding:5px;
+  margin-left:20px;
+}
+
+.img-left {
+  float:left;
+  border:.5px solid #000000;
+  padding:5px;
+  margin-right:20px;
+}
+
+.img-center {
+  display:block;
+  padding:1.5em;
+  margin:10px auto;
+}
+
+/* --------------Respnsive Images -------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------Global Styles----------------- */
+
 body {
-    background : #2b2d2f; /*Gray*/
-    color : white;
+    background-color:#F2F2F2;
 }
-/* I changed the hyperlink colors just so that they're more legible with the background. Just wanted to test it out too */
-a:link {
-    color : #17adee; /*Lightish Blue*/
-}
-a:visited {
-    color : #a312ba; /*Lightish Purple*/
-}
-th {
-    text-align : center; /*Makes the table HEADER align to the center*/
-}
-table, th, td {
-    border : 1px solid white; /*The CSS way to make a table border, as opposed to the horrendous HTML way that is off limits*/
+
+
+/* ---------------Attribute Selectors----------------- */
+
+
+
+@media screen and (max-width:1000px) {
+  header.primary nav ul {
+    flex-direction:column;
+    max-width: 70vw;
+    margin:auto;
+  }
+  header.primary nav li{
+    margin-bottom: 10px;
+  }
+  header.primary nav a{
+    display:block;
+  }
 }
