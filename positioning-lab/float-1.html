@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <title>Positioning Lab</title>
 <style type="text/css">
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -31,33 +32,23 @@ body {
 	margin-left: auto;
 	margin-bottom: 100px;
 }
-#red {
-	background-color: #900;
+.tile {
 	width: 370px;
 	height: 280px;
 	margin: 15px;
 	float: left;
+}
+#red {
+	background-color: #900;
 }
 #green {
 	background-color: #090;
-	width: 370px;
-	height: 280px;
-	margin: 15px;
-	float: right;
 }
 #blue {
 	background-color: #00F;
-	width: 370px;
-	height: 280px;
-	margin: 15px;
-	float: left;
 }
 #purple {
 	background-color: #63C;
-	width: 370px;
-	height: 280px;
-	margin: 15px;
-	float: right;
 }
 #footer {
 	background-color: #666;
@@ -75,11 +66,11 @@ h1 {
 
 <body>
 <h1>Float 1</h1>
-<div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+<div id="wrapper" >
+  <div id="red" class="tile">Red</div>
+  <div id="green" class="tile">Green</div>
+  <div id="blue" class="tile">Blue</div>
+  <div id="purple" class="tile">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>
