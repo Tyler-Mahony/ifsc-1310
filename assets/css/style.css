@@ -63,10 +63,12 @@ header.primary {
 
 body {
     background-color: #000000;
+    font-family: sans-serif;
     color:#EBF0F2;
 }
-body h3 {
-  
+
+#paragraph h2 {
+  border-bottom: 1px solid #FCFFF5;
 }
 
 li {

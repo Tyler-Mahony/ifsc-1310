@@ -1,0 +1,391 @@
+/*
+Color Theme
+#08080D (Very Dark Gray)
+#1C1C26 (Gray)
+#AAB7BF (Light Gray)
+#8C2626 (Red)
+#732C3F (Maroon)
+*/
+
+/* --- BOX SIZING --- */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* --- Utility Classes --- */
+
+.container {
+    width: 75vw;
+    margin: 30px auto;
+    max-width: 1100px;
+}
+
+.img-right {
+    float: right;
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+.img-left {
+    float: left;
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+.img-center {
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.gallery img:hover {
+  cursor:pointer;
+}
+
+
+/* --- Responsive Images --- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color:#000000;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("../img/dragon-crew.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("../img/SpaceX-Logo.png");
+  display: block;
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-family: "Arial", cursive;
+  font-size: 2em;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(140, 38, 38, .4);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(140, 38, 38, 0.8);
+}
+
+
+/* ------------- Articles --------------- */
+
+section#articles {
+  background: #08080D;
+  color: white;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+#articles article.post:hover {
+  box-shadow: 5px 5px 8px 10px rgba(255, 255, 255, .7);
+  transition: .5s;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #8C2626;
+  text-align: center;
+  font-family: "Arial", cursive;
+  font-size: 2em;
+}
+
+section#articles h2 {
+  color:#8C2626;
+  text-shadow: 2px 2px #000;
+}
+
+#articles img {
+    max-height: 200px;
+    max-width: 400px;
+}
+#articles article.post {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #1C1C26;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #3b638b;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Hero --------------- */
+
+#hero {
+  padding: 4em 0;
+}
+
+/* ------------- Aside --------------- */
+
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #08080D;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget {
+  width: 45%;
+}
+
+.widget.overview table {
+  font-size: 0.6em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.widget.overview table td {
+  border-bottom: 1px solid #8C2626;
+  padding: 10px;
+}
+
+.history.table table {
+  font-size: 1em;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.history.table table td {
+  border-bottom: 1px solid #8C2626;
+  padding: 10px;
+}
+
+.history.table table th {
+  border-bottom: 1px solid #8C2626;
+  padding: 10px;
+}
+
+.widget.overview table td:nth-child(even) {
+  text-align: right;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+/*------ Footer ------*/
+
+footer#colophon {
+  background-color: #732C3F;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fff;
+}
+
+/* ------------------ History -----------------------*/
+
+#history h2{
+  color: #8C2626;
+  border-bottom: 2px solid #8C2626;
+}
+/* ------------------ FAQ -----------------------*/
+
+#faq h2{
+  color: #8C2626;
+  border-bottom: 2px solid #8C2626;
+}
+details {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+    margin-bottom: 5px;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  aside .container {
+    flex-direction: column;
+  }
+
+  aside article.widget {
+    width: 100%;
+  }
+}
